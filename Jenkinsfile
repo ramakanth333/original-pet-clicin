@@ -1,3 +1,8 @@
+// to run this project we need jdk-17 and maven 3.8.6
+// install jdk-17 (sudo apt install openjdk-17-jdk -y)
+// install maven 3.8.7
+
+
 pipeline{
     tools{
         maven 'maven_3.8.7'
@@ -13,7 +18,6 @@ pipeline{
             steps{
                 sh '''
                       mvn clean package
-                      sleep 30s
                    '''
             }
         }
