@@ -13,7 +13,7 @@ pipeline{
             steps{
                 sh '''
                       mvn clean package
-                      sleep 180s
+                      sleep 30s
                    '''
             }
         }
